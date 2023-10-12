@@ -2,3 +2,29 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1280px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.circles {
+    background-color: darkgray;
+    padding: 3em;
+    display: flex;
+    gap: 3em;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.circles img {
+    border-style: solid;
+    border-width: 30px;
+    border-color: black;
+    border-radius: 50%;
+    width: 30%;
+}
+
