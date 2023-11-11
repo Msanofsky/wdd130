@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
+/* Rivers Page */
+
+#banner-img {
+    width: 100%;
+}
+
+/* Home Page */
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
