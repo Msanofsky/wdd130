@@ -10,6 +10,46 @@
     width: 100%;
 }
 
+#little-nav {
+    background: #ef8354;
+    display: flex; 
+    justify-content: space-around;
+    margin-top: -6px;
+}
+
+#little-nav a {
+    text-align: center;
+    color: #2d3142;
+    text-decoration: none;
+    font-family: 'Bebas Neue', arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: .1em;
+    padding: 50px;
+}
+
+#little-nav a:hover {
+    background-color: #2d3142;
+    color: #ffffff;
+}
+
+#idaho {
+    width: 100%;
+}
+
+.rivers-main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.div-img {
+    background: #4f5d75;
+}
+
+img {
+    height: 400px;
+    width: 500px;
+}
+
 /* Home Page */
 
 #content {
