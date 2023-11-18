@@ -43,11 +43,28 @@
 
 .div-img {
     background: #4f5d75;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
 }
 
-img {
-    height: 400px;
-    width: 500px;
+.div-img img {
+    width: 80%;
+}
+
+#idaho {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#utah {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#arizona {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 /* Home Page */
