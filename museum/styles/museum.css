@@ -1,3 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* Header css */
+
 header {
-    
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+#button-box {
+    text-align: center;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+    color: white;
+    letter-spacing: .1em;
+}
+
+.plan .home-title {
+    font-family: 'Playfair Display', arial, sans-serif;
+}
+
+.plan {
+    background-color: #5065A8;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.plan:hover {
+    background-color: white;
+    color: #5065A8;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav {
+    display: flex; 
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: #5065A8;
+    text-decoration: none;
+    font-family: 'Playfair Display', arial, sans-serif;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #5065A8;
+    color: black;
+}
+
+/* Main - Home Page */
+
+.current-ex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#current-header {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+#manet, #pueblo-pottery {
+    text-align: center;
+}
+
+#manet p, #pueblo-pottery p {
+    padding-bottom: 75px;
+}
+
+/* Events Section - Home Page  */
+
+.events {
+    display: grid;
+    gap: 50px;
+}
+
+#teen-studio, #date-night, #members {
+    display: grid; 
+    grid-template-columns: 70px 1fr 1fr 70px;
+}
+
+#teen-studio img, #members img {
+    grid-row: 1/3;
+    grid-column: 2/3;
+    text-align: right;
+    justify-self: end;
+}
+
+#teen-studio h3, #members h3 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    align-self: end;
+    justify-self: center;
+}
+
+#teen-studio p, #members p {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    justify-self: start;
+    margin-left: 25px;
+}
+
+#date-night img {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    justify-self: start;
+}
+
+#date-night h3 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: end;
+    justify-self: center;
+}
+
+#date-night p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-right: 25px;
+}
+
+/* Exhibitions Page  */
+
+.ex-title {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+/* #little-nav {
+    display: flex; 
+    justify-content: space-around;
+} */
+
+#little-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#little-nav a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: 'Playfair Display', arial, sans-serif;
+    padding: 35px;
+}
+
+#little-nav a:hover {
+    background-color: #5065A8;
+    color: black;
+}
+
+#little-nav img {
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    z-index: -1;
+}
+
+.plan {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.current-ex h1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.upcoming-ex {
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 1fr 30px;
+}
+
+.upcoming-ex h1 {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+#picasso {
+    grid-column: 2/3;
+}
+
+#picasso, #camille, #canova {
+    text-align: center;
+}
+
+/* Visit Page */
+
+#visit-banner {
+    width: 100%;
+}
+
+main h1 {
+    text-align: center;
+}
+
+.hour-location {
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 20px;
+    gap: 20px;
+}
+
+#hours {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border-bottom: 1px solid black;
+}
+
+#location {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border-bottom: 1px solid black;
+}
+
+#background-one {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: lightgrey;
+    color: black;
+    padding-left: 20px;
+}
+
+#background-two {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: lightgrey;
+    color: black;
+    padding-top: 10px;
+}
+
+.admin {
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: 1px solid black;
+}
+
+#background-three {
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 20px;
+    gap: 20px;
+}
+
+#background-three-a {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: 20px;
+    background-color: lightgrey;
+    color: black;
+}
+
+#background-three-b {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: lightgrey;
+    color: black;
+}
+
+/* MoA Footer - Home Page  */
+
+footer .social img {
+    padding-top: 15px;
+}
+
+footer {
+    background-color: #767676;
+    color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #5065A8;
+}
+
+footer p {
+    font-size: 1.2em;
 }
